@@ -1,73 +1,35 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+# Haciendola-test (haciendola-back-test)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Este es un proyecto back-end, especificamente una **Rest API** construida con **Nodejs**, **Express** y **NestJs**. Permita el registro e autenmticacion de usuarios ademas de aminsitradcion de produstos almacenados en una base de datos **SQL** especificamente **PostgreSQL**
 
-## Description
+## Dependencias
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+1- Para el correcto funcionamiento de este proyecto sera tener instalado PostgreSQL en su version 13 o superior, la cual puede ser decargada del siguiente enlace https://www.postgresql.org/download/
+2- Nodejs en su version 16 o superior 
+3- Npm o algun manejador de paquetes de su preferencia 
 
-## Installation
+## Tecnologias
 
-```bash
-$ npm install
-```
+- Nodejs
+- Express
+- Nestjs
+- npm
+- JWT
+- Passpost
 
-## Running the app
+## Instalación
 
-```bash
-# development
-$ npm run start
+Luego, sigue estos pasos:
 
-# watch mode
-$ npm run start:dev
+1.  Clonar  el  repositorio
 
-# production mode
-$ npm run start:prod
-```
+2.  Instala  las  dependencias:  `npm install`  o  usar  yarn  segun  su  preferencia
 
-## Test
+4.  Definir  las  variables  de  entorno
 
-```bash
-# unit tests
-$ npm run test
+3.  Ejecuta  el  servidor  de  desarrollo:  `npm run start:dev`
 
-# e2e tests
-$ npm run test:e2e
+## Uso
 
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Una vez que el servidor esté en funcionamiento, puedes la inertfaz web o en su defecto algun clientes HTTP  `http://localhost:<puerto especificado>` para poder interactuar con la API.
