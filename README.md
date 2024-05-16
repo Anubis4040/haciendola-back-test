@@ -5,9 +5,9 @@ Este es un proyecto back-end, específicamente una **Rest API** construida con *
 
 ## Dependencias
 
-1- Para el correcto funcionamiento de este proyecto será necesario tener instalado PostgreSQL en su versión 13 o superior, puede ser descargada del siguiente enlace https://www.postgresql.org/download/
-2- Nodejs en su versión 16 o superior.
-3- Npm o algún manejador de paquetes de su preferencia
+1. Para el correcto funcionamiento de este proyecto será necesario tener instalado PostgreSQL en su versión 13 o superior, puede ser descargada del siguiente enlace https://www.postgresql.org/download/
+2. Nodejs en su versión 16 o superior.
+3. Npm o algún manejador de paquetes de su preferencia
 
 ## Tecnologías
 
