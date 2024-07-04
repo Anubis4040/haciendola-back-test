@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { EncodeService, UserService } from './domain/services';
 import { UserRepository } from './infrastructure/repositories';
-import { GetOneUserUseCase, ListUsersUseCase, SaveUserUseCase } from './domain/useCases';
+import { ChangePasswordUseCase, GetOneUserUseCase, ListUsersUseCase, SaveUserUseCase } from './domain/useCases';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserSchema } from './infrastructure/schemas';
 import { UserController } from './presentation/controllers';
@@ -20,7 +20,7 @@ import { ConfigService } from '@nestjs/config';
         }),
     ],
     controllers: [UserController],
-    providers: [UserRepository, UserService, EncodeService, SaveUserUseCase, GetOneUserUseCase, ListUsersUseCase, RecoverPasswordUseCase],
+    providers: [UserRepository, UserService, EncodeService, SaveUserUseCase, GetOneUserUseCase, ListUsersUseCase, RecoverPasswordUseCase, ChangePasswordUseCase],
     exports: [UserService, EncodeService],
 })
 export class UserModule {}

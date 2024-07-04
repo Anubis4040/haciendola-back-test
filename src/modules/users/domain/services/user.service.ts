@@ -32,7 +32,7 @@ export class UserService {
     }
 
     generateReverToken(user: User): string {
-        return this.jwtService.sign({ id: user.id, email: user.email }, { expiresIn: '1h' });
+        return this.jwtService.sign({ id: user.id }, { expiresIn: '1h' });
     }
 
     async sendRecoverEmail(user: User): Promise<void> {

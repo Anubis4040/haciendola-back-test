@@ -7,6 +7,7 @@ import { IServerConfig, swaggerConfig } from './config';
 import { SwaggerModule } from '@nestjs/swagger';
 import { LoggerContext } from './shared/app/enums';
 import cookieParser from 'cookie-parser';
+import { GenericExceptionFilter } from './shared/filters/generic-exception.filter';
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule);
@@ -18,6 +19,8 @@ async function bootstrap() {
     });
 
     app.use(cookieParser());
+
+    app.useGlobalFilters(new GenericExceptionFilter());
 
     app.useGlobalPipes(
         new ValidationPipe({

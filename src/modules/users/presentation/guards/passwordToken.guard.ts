@@ -10,9 +10,8 @@ export class PasswordTokenGuard implements CanActivate {
     canActivate(context: ExecutionContext): boolean | Promise<boolean> | Observable<boolean> {
         const ctx = context.switchToHttp();
         const request = ctx.getRequest<Request>();
-        const verify = this.jwtService.verify(request.body.token);
-        console.log('verify', verify);
-        // console.log('request', request.headers);
+        const verify = this.jwtService.verify(request.query.token as string);
+        request.user = { id: verify.id };
         return true;
     }
 }
